@@ -1,0 +1,23 @@
+body{
+    background-color:black;
+    font-family: 'Sansita';
+    color:#F1FAEE;
+}
+.titulo-principal{
+    font-family: 'Zeyada';
+    font-weight: 400;
+    font-size: 64px;
+    color: #A8DADC;
+    padding: 1rem 1rem;
+}
+.titulo-secundario{
+    font-weight: 400;
+    font-size: 34px;
+ }
+ .formulario-buscar{
+    border-style: none;
+    border-color:#F1FAEE;
+    border-radius: 2px;
+    color: #BDCECF;
+    font-family: 'Sansita';
+ }

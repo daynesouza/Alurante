@@ -1,0 +1,127 @@
+/*Cardápio Pesquisa*/
+.cardapio-pesquisa{
+    align-items: center;    
+    background-color:#457B9D;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.titulo-secundario_cardapio{
+    padding: 1rem 1rem;
+}
+.formulario-buscar_cardapio{
+    padding: 0.15rem 1rem;
+    margin: 1rem 0.5rem;
+}
+.cardapio-formulario{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.botao{
+    background-color: #1D3557;
+    border-style: none;
+    box-shadow: 2px 2px 5px #494949;
+    color: #BDCECF;
+    font-family: 'Sansita';
+    margin: 1rem 1rem;
+    text-align: center;
+    width: 10%;
+}
+.botao:hover{
+    border: 2px solid #E63946;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+/*Cardápio Itens*/
+.cardapio-itens{
+    align-items: center;
+    background-color: #457B9D;
+    display: flex;
+    flex-direction: column;
+}
+.cardapio-item{
+    width: 95%;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 2px 2px 5px #494949;
+}
+
+/*Cardápio Blog*/
+.cardapio-blog{
+    align-items: center;
+    background-color: #F1FAEE;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-secundario_blog{
+    color: #1D3557;
+    padding: 1rem 1rem;
+}
+.blog-imagem{
+    width: 90%;
+    margin: 1rem 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+    /*Cardápio Pesquisa*/
+    .cardapio-pesquisa{
+        align-items: first baseline;
+        padding: 2rem 2rem 2rem 2rem; 
+    }
+    .cardapio-formulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 20%;
+    }
+    .formulario-buscar_cardapio{
+        grid-column: span 4;
+        width: 60%;
+        padding: 0.15rem 1rem;
+        margin: 1rem 1rem 0.5rem 1rem;
+    }
+    .botao{
+        width: 80%;
+        height: 50%;
+    }
+
+    /*Cardápio Itens*/
+    .cardapio-itens{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2rem;
+        justify-items: center;
+    }
+    .cardapio-item{
+        width: 85%;        
+    }
+
+    /* Cardápio Blog */
+    .cardapio-blog{
+        display: grid;
+        grid-template:
+        "titulo titulo titulo"
+        "destaque destaque imagem1"
+        "destaque destaque imagem2";
+        justify-items: stretch;
+        padding: 2rem 0rem;
+        column-gap: 1rem;
+
+    }
+    .titulo-secundario_blog{
+        grid-area: titulo;
+    }    
+    .blog-imagem_imagem1{
+        grid-area: imagem1; 
+    }
+    .blog-imagem_imagem2{
+        grid-area: imagem2;
+    }
+    .blog-imagem_destaque{
+        grid-area: destaque;
+    }  
+    
+}

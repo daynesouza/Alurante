@@ -1,0 +1,95 @@
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alurante</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css"> 
+    <link rel="stylesheet" href="./css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="./css/cardapio/cardapio.css">
+    <link rel="stylesheet" href="./css/rodape/rodape.css">   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo-principal">Alurante</h1>
+        <nav class="cabecalho-menu">
+            <ul class="cabecalho-menu-itens">
+                <li class="cabecalho-menu-item"><a href="#">home</a></li>
+                <li class="cabecalho-menu-item"><a href="#">sobre</a></li>
+                <li class="cabecalho-menu-item"><a href="#">delivery</a></li>
+                <li class="cabecalho-menu-item"><a href="#">reserva</a></li>
+                <li class="cabecalho-menu-item"><a href="#">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cardapio">
+        <section class="cardapio-pesquisa">
+            <h2 class="titulo-secundario titulo-secundario_cardapio">CARDÁPIO</h2>
+            <form class="cardapio-formulario">
+                <input type="text" class="formulario-buscar formulario-buscar_cardapio" placeholder="buscar...">
+                <input type="submit" value="Carne"class="botao">
+                <input type="submit" value="Massa" class="botao">
+                <input type="submit" value="Vegano" class="botao">
+                <input type="submit" value="Bebidas" class="botao">
+            </form>
+        </section>
+        <section class="cardapio-itens">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+        </section>
+        <section class="cardapio-blog">
+            <h2 class="titulo-secundario titulo-secundario_blog">BLOG</h2>
+            <img class="blog-imagem blog-imagem_destaque" src="./src/img/bandejaServida.jpg">
+            <img class="blog-imagem blog-imagem_imagem1" src="./src/img/pratos.jpg">
+            <img class="blog-imagem blog-imagem_imagem2" src="./src/img/mesaComPratos.png">
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-menu">
+            <h2 class="titulo-secundario titulo-secundario_rodape">MENU</h2>
+            <ul class="rodape-menu-itens">
+                <li class="rodape-menu-item"><a href="#">home</a></li>
+                <li class="rodape-menu-item"><a href="#">sobre</a></li>
+                <li class="rodape-menu-item"><a href="#">delivery</a></li>
+                <li class="rodape-menu-item"><a href="#">reserva</a></li>
+                <li class="rodape-menu-item"><a href="#">contato</a></li>
+            </ul>            
+        </div>
+        <div class="rodape-contato">   
+            <h2 class="titulo-secundario titulo-secundario_rodape">CONTATO</h2>
+            <img src="./src/img/mail.svg" class="rodape-contato-img" alt="Icone de e-mail">
+            <img src="./src/img/phone.svg" class="rodape-contato-img" alt="Icone de um celular">
+            <img src="./src/img/instagram.svg" class="rodape-contato-img" alt="Icone do Instagram">
+            <img src="./src/img/twitter.svg" class="rodape-contato-img" alt="Icone do Twitter">
+        </div>
+        <div class="rodape-endereco">
+            <h2 class="titulo-secundario titulo-secundario_rodape">ENDEREÇO</h2>
+            <p class="rodape-endereco-texto">
+                Rua Vergueiro, 3185 </br>
+                Vila Mariana, São Paulo - SP</br>
+                Cep: 04101-300
+            </p>       
+        </div>
+        <div class="rodape-buscar">  
+            <h2 class="titulo-secundario titulo-secundario_rodape">BUSCAR</h2>
+            <form><input type="text" class="formulario-buscar formulario-buscar_rodape" placeholder="buscar..."></form>
+        </div>
+    </footer>
+</body>
+</html>
