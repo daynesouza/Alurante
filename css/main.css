@@ -1,10 +1,10 @@
 body{
     background-color:black;
-    font-family: 'Sansita';
+    font-family: var(--font-main);
     color:#F1FAEE;
 }
 .titulo-principal{
-    font-family: 'Zeyada';
+    font-family: var(--font-Zeyada);
     font-weight: 400;
     font-size: 64px;
     color: #A8DADC;

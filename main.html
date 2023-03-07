@@ -7,14 +7,11 @@
     <title>Alurante</title>
 
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css"> 
     <link rel="stylesheet" href="./css/main.css"> 
     <link rel="stylesheet" href="./css/cabecalho/cabecalho.css">
     <link rel="stylesheet" href="./css/cardapio/cardapio.css">
     <link rel="stylesheet" href="./css/rodape/rodape.css">   
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sansita&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
@@ -35,10 +32,12 @@
             <h2 class="titulo-secundario titulo-secundario_cardapio">CARDÁPIO</h2>
             <form class="cardapio-formulario">
                 <input type="text" class="formulario-buscar formulario-buscar_cardapio" placeholder="buscar...">
-                <input type="submit" value="Carne"class="botao">
-                <input type="submit" value="Massa" class="botao">
-                <input type="submit" value="Vegano" class="botao">
-                <input type="submit" value="Bebidas" class="botao">
+                <ul>
+                    <li><input type="submit" value="Carne"class="botao"></li>
+                    <li><input type="submit" value="Massa" class="botao"></li>
+                    <li><input type="submit" value="Vegano" class="botao"></li>
+                    <li><input type="submit" value="Bebidas" class="botao"></li>
+                </ul>
             </form>
         </section>
         <section class="cardapio-itens">

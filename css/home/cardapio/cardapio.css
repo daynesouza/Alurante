@@ -19,6 +19,13 @@
     flex-direction: column;
     width: 100%;
 }
+.cardapio-formulario ul{
+    display: flex;
+}
+.cardapio-formulario ul li{
+    width: 5em;
+    height: 3em;
+}
 .botao{
     background-color: #1D3557;
     border-style: none;
@@ -28,10 +35,11 @@
     margin: 1rem 1rem;
     text-align: center;
     width: 10%;
+    height: 5%;
+    transition-duration: 0.5s;
 }
 .botao:hover{
     border: 2px solid #E63946;
-    transition-duration: 0.5s;
     transform: scale(1.2);
 }
 
