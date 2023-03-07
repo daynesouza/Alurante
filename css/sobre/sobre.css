@@ -1,0 +1,31 @@
+/* Cabecalho */
+.container__header--sobre{
+    background-color: var(--sobre__header__cabecalho--backgroundColor);    
+}
+.container__header__title--sobre{
+    color: var(--sobre__header__cabecalho__title--fontcolor);
+}
+.container__header__menu__item--sobre{
+    color: var(--sobre__header__cabecalho__menu--fontcolor);
+}
+
+/* Main */
+.container--main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sobre */
+.main__sobre{
+    align-items: center;
+    background-color: var(--sobre__main__sobre--backgroundColor);
+    box-shadow: inset 0px 2px 5px #a1a1a1;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;
+}
+.main__sobre__title{
+    color: var(--sobre__main__sobre__title--fontColor);
+    font-family: var(--font-Zeyada);
+}

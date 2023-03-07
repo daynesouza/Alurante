@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita&family=Zeyada&display=swap');
+
+:root {
+    --body-font: 'Sansita', sans-serif;
+    --font-Zeyada: 'Zeyada';
+    --body-fontColor: #F1FAEE;
+
+    /*cabecalho*/
+    --sobre__header__cabecalho--backgroundColor: #A8DADC;
+    --sobre__header__cabecalho__title--fontcolor:#1D3557;
+    --sobre__header__cabecalho__menu--fontcolor: #1D3557;
+
+    /*Main__sobre*/
+    --sobre__main__sobre--backgroundColor:#F1FAEE;
+    --sobre__main__sobre__title--fontColor:#1D3557;
+
+    --sobre__header__title--fontColor:#1D3557;
+    --sobre__header_button--fontColor: #1D3557;
+    --sobre__main__title--fontColor:#1D3557;
+    --sobre__main__section__title--fontColor: #457B9D;
+    --sobre__main__section__text--fontColor: #F1FAEE;    
+}
+
+body{
+    background-color:black;
+    font-family: var(--body-font);
+    color:var(--body-fontColor);
+    width: 100vw;
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title__secundario{
+    font-weight: 400;
+    font-size: 64px;
+}

@@ -1,0 +1,39 @@
+.container__header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: space-around;
+}
+
+.container__header__title{
+    font-family: var(--font-Zeyada);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.container__header__menu{
+    text-align: center;
+    height: 70%;
+    width: 100%;
+}
+
+.container__header__menu__itens{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.container__header__menu__item{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline #E63946;
+    transition: 1s;
+}
+
+.container__header__menu__item:hover{
+    transform: scale(1.5);
+}
