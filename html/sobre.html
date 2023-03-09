@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="../css/rodape/rodape.css">
     <link rel="stylesheet" href="../css/sobre/sobre.css">
 <body>
     <header class="container container__header container__header--sobre">
         <h1 class="container__header__title container__header__title--sobre">Alurante</h1>
         <nav class="container__header__menu">
             <ul class="container__header__menu__itens container__header__menu--sobre">
-                <li><a href="#" class="container__header__menu__item container__header__menu__item--sobre">home</a></li>
+                <li><a href="../main.html" class="container__header__menu__item container__header__menu__item--sobre">home</a></li>
                 <li><a href="#" class="container__header__menu__item container__header__menu__item--sobre">sobre</a></li>
                 <li><a href="#" class="container__header__menu__item container__header__menu__item--sobre">delivery</a></li>
                 <li><a href="#" class="container__header__menu__item container__header__menu__item--sobre">reserva</a></li>
@@ -31,16 +32,20 @@
         </section>       
 
         <article class="main__historia">
-            <h2 class="title__secundario main__historia__title">Nossa Historia</h2>
-            <img src="" alt="" class="main__historia__imagem">
-            <p class="text_descricao main__historia__text">
-                Lorem ipsum dolor sit amet consectetur. 
-                At nunc morbi sed purus cras. Sagittis 
-                tempus nam id pretium vitae in varius egestas. 
-                Dolor bibendum venenatis vulputate 
-                accumsan et nisl vivamus vulputate. 
-                Adipiscing augue ut id eu sem enim.
-            </p>
+            <div class="container main__historia__container">
+                <img class="main__historia__imagem" src="../assets/src/img/Sobre/restaurante.png" alt="Foto do restaurante">
+                    <div class="main__historia__container__descricao">
+                        <h2 class="title__secundario main__historia__title">Nossa Historia</h2>
+                        <p class="text_descricao main__historia__text">
+                            Lorem ipsum dolor sit amet consectetur. 
+                            At nunc morbi sed purus cras. Sagittis 
+                            tempus nam id pretium vitae in varius egestas. 
+                            Dolor bibendum venenatis vulputate 
+                            accumsan et nisl vivamus vulputate. 
+                            Adipiscing augue ut id eu sem enim.
+                        </p>
+                    </div>
+            </div>
             <a href="" class="custom__linkButton main__historia__saberMais">Saber mais</a>
         </article>
 
@@ -48,48 +53,54 @@
             <h2 class="title__secundario main__avaliacao__title">O que dizem sobre nós</h2>
             <section class="main__avaliacao__comentario">
                 <p class="main__avaliacao__comentario__text">
-                    Lorem ipsum dolor sit amet consectetur. 
+                    "Lorem ipsum dolor sit amet consectetur. 
                     At nunc morbi sed purus cras. Sagittis 
                     tempus nam id pretium vitae in varius egestas. 
                     Dolor bibendum venenatis vulputate 
                     accumsan et nisl vivamus vulputate. 
-                    Adipiscing augue ut id eu sem enim.
+                    Adipiscing augue ut id eu sem enim."
                 </p>
-                <img class="main__avaliacao__comentario__avatar">
-                <h3 class="main__avaliacao__comentario__name">Lucas R.</h3>
+                <div class="main__avaliacao__comentario__usuario">
+                    <img class="main__avaliacao__comentario__avatar" src="../assets/src/img/Sobre/avatar.svg" alt="Foto do usuário">
+                    <h3 class="main__avaliacao__comentario__name">Lucas R.</h3>
+                </div>
             </section>
 
             <section class="main__avaliacao__comentario">
                 <p class="main__avaliacao__comentario__text">
-                    Lorem ipsum dolor sit amet consectetur. 
+                    "Lorem ipsum dolor sit amet consectetur. 
                     At nunc morbi sed purus cras. Sagittis 
                     tempus nam id pretium vitae in varius egestas. 
                     Dolor bibendum venenatis vulputate 
                     accumsan et nisl vivamus vulputate. 
-                    Adipiscing augue ut id eu sem enim.
+                    Adipiscing augue ut id eu sem enim."
                 </p>
-                <img class="main__avaliacao__comentario__avatar">
-                <h3 class="main__avaliacao__comentario__name">Thais B.</h3>
+                <div class="main__avaliacao__comentario__usuario">
+                    <img class="main__avaliacao__comentario__avatar" src="../assets/src/img/Sobre/avatar.svg" alt="Foto do usuário">
+                    <h3 class="main__avaliacao__comentario__name">Thais B.</h3>
+                </div>
             </section>
 
             <section class="main__avaliacao__comentario">
                 <p class="main__avaliacao__comentario__text">
-                    Lorem ipsum dolor sit amet consectetur. 
+                    "Lorem ipsum dolor sit amet consectetur. 
                     At nunc morbi sed purus cras. Sagittis 
                     tempus nam id pretium vitae in varius egestas. 
                     Dolor bibendum venenatis vulputate 
                     accumsan et nisl vivamus vulputate. 
-                    Adipiscing augue ut id eu sem enim.
+                    Adipiscing augue ut id eu sem enim."
                 </p>
-                <img class="main__avaliacao__comentario__avatar">
-                <h3 class="main__avaliacao__comentario__name">Larissa B.</h3>
+                <div class="main__avaliacao__comentario__usuario">
+                    <img class="main__avaliacao__comentario__avatar" src="../assets/src/img/Sobre/avatar.svg" alt="Foto do usuário">
+                    <h3 class="main__avaliacao__comentario__name">Larissa B.</h3>
+                </div>
             </section>            
         </article>
 
-        <article class="main__nossoMenu">
-            <section class="main__nossoMenu__descricao">
-                <h2 class="title__secundario main__nossoMenu__descricao__title">Nosso Menu</h2>
-                <P class="text_descricao main__mnossoMenu__descricao__text">  
+        <article class="main__menu">
+            <section class="main__menu__descricao">
+                <h2 class="title__secundario main__menu__descricao__title">Nosso Menu</h2>
+                <P class="text_descricao main__menu__descricao__text">  
                     Lorem ipsum dolor sit amet consectetur. 
                     At nunc morbi sed purus cras. Sagittis 
                     tempus nam id pretium vitae in varius egestas. 
@@ -99,19 +110,19 @@
                 </P>
             </section>
 
-            <section class="main__nossoMenu__cardapio">
-                <img class="main__nossoMenu__cardapio__item">
-                <img class="main__nossoMenu__cardapio__item">
-                <img class="main__nossoMenu__cardapio__item">
-                <img class="main__nossoMenu__cardapio__item">
+            <section class="main__menu__cardapio">
+                <img class="main__menu__cardapio__item" src="../assets/src/img/Sobre/prato1.jpg" alt="Foto de um prato com comida">
+                <img class="main__menu__cardapio__item" src="../assets/src/img/Sobre/prato2.jpg" alt="Foto de um prato com comida">
+                <img class="main__menu__cardapio__item" src="../assets/src/img/Sobre/prato3.jpg" alt="Foto de um prato com comida">
+                <img class="main__menu__cardapio__item" src="../assets/src/img/Sobre/prato4.jpg" alt="Foto de um prato com comida">               
             </section>  
             <a class="custom__linkButton main__menu__saberMais">Saber Mais</a>         
         </article>  
         
         <article class="main__nossasUnidades">
             <section class="main__nossasUnidades__descricao">
-                <h2 class="title__secundario main__nossasUnidades__descricao">Nossas Unidades</h2>
-                <p class="text_descricao main__nossasUnidades__text">
+                <h2 class="title__secundario main__nossasUnidades__descricao__title">Nossas Unidades</h2>
+                <p class="text_descricao main__nossasUnidades__descricao__text">
                     Lorem ipsum dolor sit amet consectetur. 
                     At nunc morbi sed purus cras. Sagittis 
                     tempus nam id pretium vitae in varius egestas. 
@@ -121,30 +132,32 @@
                 </p>
             </section>
             <section class="main__nossasUnidades__imagens">
-                <img src="" alt="" class="main__nossasUnidades__imagem">
-                <img src="" alt="" class="main__nossasUnidades__imagem">
+                <img class="main__nossasUnidades__imagem" src="../assets/src/img/Sobre/fachada1.jpg" alt="Foto da fachada do restaurante">
+                <img class="main__nossasUnidades__imagem" src="../assets/src/img/Sobre/fachada2.jpg" alt="Foto da fachada do restaurante">
             </section>
-            <a class="custom__linkButton main__menu__saberMais">Saber Mais</a>   
+            <a class="custom__linkButton main__nossasUnidades__saberMais">Saber Mais</a>   
         </article>
     </main>
     <footer class="container container--rodape">
-        <div class="rodape__menu">
-            <h2 class="rodape__menu__title">MENU</h2>
+        <section class="rodape__menu">
+            <h2 class="title__secundario rodape__title">MENU</h2>
             <ul class="rodape__menu__itens">
-                <li class="rodape__menu__item"><a href="#">home</a></li>
-                <li class="rodape__menu__item"><a href="#">sobre</a></li>
-                <li class="rodape__menu__item"><a href="#">delivery</a></li>
-                <li class="rodape__menu__item"><a href="#">reserva</a></li>
-                <li class="rodape__menu__item"><a href="#">contato</a></li>
+                <li><a class="rodape__menu__item" href="#">home</a></li>
+                <li><a class="rodape__menu__item" href="#">sobre</a></li>
+                <li><a class="rodape__menu__item" href="#">delivery</a></li>
+                <li><a class="rodape__menu__item" href="#">reserva</a></li>
+                <li><a class="rodape__menu__item" href="#">contato</a></li>
             </ul>            
-        </div>
-        <div class="rodape__contato">   
-            <h2 class="rodape__title">CONTATO</h2>
-            <img src="./src/img/mail.svg" class="rodape__contato__img" alt="Icone de e-mail">
-            <img src="./src/img/phone.svg" class="rodape__contato__img" alt="Icone de um celular">
-            <img src="./src/img/instagram.svg" class="rodape__contato__img" alt="Icone do Instagram">
-            <img src="./src/img/twitter.svg" class="rodape__contato__img" alt="Icone do Twitter">
-        </div>
+        </section>
+        <section class="rodape__contato">   
+            <h2 class="title__secundario rodape__title">CONTATO</h2>
+            <div class="rodape__contato__icones">
+                <img src="../assets/src/img/rodape/mail.svg" class="rodape__contato__ico" alt="Icone de e-mail">
+                <img src="../assets/src/img/rodape/phone.svg" class="rodape__contato__ico" alt="Icone de um celular">
+                <img src="../assets/src/img/rodape/instagram.svg" class="rodape__contato__ico" alt="Icone do Instagram">
+                <img src="../assets/src/img/rodape/twitter.svg" class="rodape__contato__ico" alt="Icone do Twitter">
+            </div> 
+        </section>
         <address class="rodape__endereco">
             <h2 class="rodape__title">ENDEREÇO</h2>
 
@@ -154,10 +167,10 @@
                 Cep: 04101-300
             </p>       
         </address>
-        <div class="rodape__buscar">  
-            <h2 class="rodape__title">BUSCAR</h2>
+        <section class="rodape__buscar">  
+            <h2 class="title__secundario rodape__title">BUSCAR</h2>
             <form><input type="text" class="formulario-buscar rodape__buscar__form" placeholder="buscar..."></form>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

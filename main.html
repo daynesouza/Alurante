@@ -7,88 +7,91 @@
     <title>Alurante</title>
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/global.css"> 
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css"> 
     <link rel="stylesheet" href="./css/cabecalho/cabecalho.css">
-    <link rel="stylesheet" href="./css/cardapio/cardapio.css">
+    <link rel="stylesheet" href="./css/home/cardapio/cardapio.css">
     <link rel="stylesheet" href="./css/rodape/rodape.css">   
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="titulo-principal">Alurante</h1>
-        <nav class="cabecalho-menu">
-            <ul class="cabecalho-menu-itens">
-                <li class="cabecalho-menu-item"><a href="#">home</a></li>
-                <li class="cabecalho-menu-item"><a href="#">sobre</a></li>
-                <li class="cabecalho-menu-item"><a href="#">delivery</a></li>
-                <li class="cabecalho-menu-item"><a href="#">reserva</a></li>
-                <li class="cabecalho-menu-item"><a href="#">contato</a></li>
+    <header class="container container__header container__header--home">
+        <h1 class="container__header__title container__header__title--home">Alurante</h1>
+        <nav class="container__header__menu">
+            <ul class="container__header__menu__itens container__header__menu--home">
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--home">home</a></li>
+                <li><a href="./html/sobre.html" class="container__header__menu__item container__header__menu__item--home">sobre</a></li>
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--home">delivery</a></li>
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--home">reserva</a></li>
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--home">contato</a></li>                
             </ul>
         </nav>
     </header>
 
-    <main class="cardapio">
-        <section class="cardapio-pesquisa">
-            <h2 class="titulo-secundario titulo-secundario_cardapio">CARDÁPIO</h2>
-            <form class="cardapio-formulario">
-                <input type="text" class="formulario-buscar formulario-buscar_cardapio" placeholder="buscar...">
-                <ul>
-                    <li><input type="submit" value="Carne"class="botao"></li>
-                    <li><input type="submit" value="Massa" class="botao"></li>
-                    <li><input type="submit" value="Vegano" class="botao"></li>
-                    <li><input type="submit" value="Bebidas" class="botao"></li>
+    <main class="container main__cardapio">
+        <section class="main__cardapio__pesquisa">
+            <h2 class="title__secundario main__cardapio__pesquisa__title">CARDÁPIO</h2>
+            <form class="main__cardapio__pesquisa__form">
+                <input type="text" class="formulario-buscar main__cardapio__pesquisa__form__pesquisa" placeholder="buscar...">
+                <ul class="main__cardapio__pesquisa__form__lista">
+                    <li class="main__cardapio__pesquisa__form__lista__item"><input type="submit" value="Carne"class="main__cardapio__pesquisa__form__botao"></li>
+                    <li class="main__cardapio__pesquisa__form__lista__item"><input type="submit" value="Massa" class="main__cardapio__pesquisa__form__botao"></li>
+                    <li class="main__cardapio__pesquisa__form__lista__item"><input type="submit" value="Vegano" class="main__cardapio__pesquisa__form__botao"></li>
+                    <li class="main__cardapio__pesquisa__form__lista__item"><input type="submit" value="Bebidas" class="main__cardapio__pesquisa__form__botao"></li>
                 </ul>
             </form>
         </section>
-        <section class="cardapio-itens">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
-            <img class="cardapio-item" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+        <section class="main__cardapio__refeicoes">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
+            <img class="main__cardapio__refeicao" src="./src/img/refeição1.jpg" alt="Foto de uma refeição">
         </section>
-        <section class="cardapio-blog">
-            <h2 class="titulo-secundario titulo-secundario_blog">BLOG</h2>
-            <img class="blog-imagem blog-imagem_destaque" src="./src/img/bandejaServida.jpg">
-            <img class="blog-imagem blog-imagem_imagem1" src="./src/img/pratos.jpg">
-            <img class="blog-imagem blog-imagem_imagem2" src="./src/img/mesaComPratos.png">
+        <section class="main__cardapio__blog">
+            <h2 class="title__secundario main__cardapio__blog__title">BLOG</h2>
+            <img class="main__cardapio__blog__img main__cardapio__blog__img__destaque" src="./src/img/bandejaServida.jpg">
+            <img class="main__cardapio__blog__img main__cardapio__blog__img__imagem1" src="./src/img/pratos.jpg">
+            <img class="main__cardapio__blog__img main__cardapio__blog__img__imagem2" src="./src/img/mesaComPratos.png">
         </section>
     </main>
 
-    <footer class="rodape">
-        <div class="rodape-menu">
-            <h2 class="titulo-secundario titulo-secundario_rodape">MENU</h2>
-            <ul class="rodape-menu-itens">
-                <li class="rodape-menu-item"><a href="#">home</a></li>
-                <li class="rodape-menu-item"><a href="#">sobre</a></li>
-                <li class="rodape-menu-item"><a href="#">delivery</a></li>
-                <li class="rodape-menu-item"><a href="#">reserva</a></li>
-                <li class="rodape-menu-item"><a href="#">contato</a></li>
+    <footer class="container container--rodape">
+        <section class="rodape__menu">
+            <h2 class="title__secundario rodape__title">MENU</h2>
+            <ul class="rodape__menu__itens">
+                <li><a class="rodape__menu__item" href="#">home</a></li>
+                <li><a class="rodape__menu__item" href="#">sobre</a></li>
+                <li><a class="rodape__menu__item" href="#">delivery</a></li>
+                <li><a class="rodape__menu__item" href="#">reserva</a></li>
+                <li><a class="rodape__menu__item" href="#">contato</a></li>
             </ul>            
-        </div>
-        <div class="rodape-contato">   
-            <h2 class="titulo-secundario titulo-secundario_rodape">CONTATO</h2>
-            <img src="./src/img/mail.svg" class="rodape-contato-img" alt="Icone de e-mail">
-            <img src="./src/img/phone.svg" class="rodape-contato-img" alt="Icone de um celular">
-            <img src="./src/img/instagram.svg" class="rodape-contato-img" alt="Icone do Instagram">
-            <img src="./src/img/twitter.svg" class="rodape-contato-img" alt="Icone do Twitter">
-        </div>
-        <div class="rodape-endereco">
-            <h2 class="titulo-secundario titulo-secundario_rodape">ENDEREÇO</h2>
-            <p class="rodape-endereco-texto">
+        </section>
+        <section class="rodape__contato">   
+            <h2 class="title__secundario rodape__title">CONTATO</h2>
+            <div class="rodape__contato__icones">
+                <img src="./assets/src/img/rodape/mail.svg" class="rodape__contato__ico" alt="Icone de e-mail">
+                <img src="./assets/src/img/rodape/phone.svg" class="rodape__contato__ico" alt="Icone de um celular">
+                <img src="./assets/src/img/rodape/instagram.svg" class="rodape__contato__ico" alt="Icone do Instagram">
+                <img src="./assets/src/img/rodape/twitter.svg" class="rodape__contato__ico" alt="Icone do Twitter">
+            </div> 
+        </section>
+        <address class="rodape__endereco">
+            <h2 class="rodape__title">ENDEREÇO</h2>
+
+            <p class="rodape__endereco__text">
                 Rua Vergueiro, 3185 </br>
                 Vila Mariana, São Paulo - SP</br>
                 Cep: 04101-300
             </p>       
-        </div>
-        <div class="rodape-buscar">  
-            <h2 class="titulo-secundario titulo-secundario_rodape">BUSCAR</h2>
-            <form><input type="text" class="formulario-buscar formulario-buscar_rodape" placeholder="buscar..."></form>
-        </div>
+        </address>
+        <section class="rodape__buscar">  
+            <h2 class="title__secundario rodape__title">BUSCAR</h2>
+            <form><input type="text" class="formulario-buscar rodape__buscar__form" placeholder="buscar..."></form>
+        </section>
     </footer>
 </body>
 </html>

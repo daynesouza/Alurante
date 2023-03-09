@@ -1,18 +1,10 @@
-.titulo-principal{
-    font-family: var(--font-Zeyada);
-    font-weight: 400;
-    font-size: 64px;
-    color: #A8DADC;
-    padding: 1rem 1rem;
+/*Cabecalho*/
+.container__header--home{
+    background-color: var(--home__header__cabecalho--backgroundColor);    
 }
-.titulo-secundario{
-    font-weight: 400;
-    font-size: 34px;
- }
- .formulario-buscar{
-    border-style: none;
-    border-color:#F1FAEE;
-    border-radius: 2px;
-    color: #BDCECF;
-    font-family: 'Sansita';
- }
+.container__header__title--home{
+    color: var(--home__header__cabecalho__title--fontcolor);
+}
+.container__header__menu__item--home{
+    color: var(--home__header__cabecalho__menu--fontcolor);
+}

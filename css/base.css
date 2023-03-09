@@ -1,10 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Sansita&family=Zeyada&display=swap');
 
 :root {
+    /*------CSS global------*/
     --body-font: 'Sansita', sans-serif;
     --font-Zeyada: 'Zeyada';
+    --font-Montserrat: 'Montserrat';
     --body-fontColor: #F1FAEE;
 
+    /*Botão (tag A) "Saber Mais"*/
+    --custom__linkButton--colorbackground:#FFFFFF;
+    --custom__linkButton--colorborder: #457B9D;
+    --custom__linkButton--fontcolor:#457B9D;
+    --custom__linkButoon--clicado--coloborder: #E63946;
+
+    /*Formulário texto buscar*/
+    --formulario__buscar--corBorder:#F1FAEE;
+    --formulario__buscar--placeHoderFontColor:#BDCECF;
+
+    /*Rodapé*/
+    --rodape--backgroundColor: #1D3557;
+    --rodape--fontColor: #F1FAEE;
+
+    /*------CSS Páginas------*/
+
+    /***Página Home***/
+    /*Cabecalho*/
+    --home__header__cabecalho--backgroundColor: #1D3557;
+    --home__header__cabecalho__title--fontcolor:#A8DADC;
+    --home__header__cabecalho__menu--fontcolor: #F1FAEE;
+
+    /*Main*/
+    --home__main--backgroundColor: #457B9D;
+
+    /*Cardapio Pesquisa*/
+    --main__cardapio__pesquisa__form__botao--background:#1D3557;
+    --main__cardapio__pesquisa__form__botao--fontColor: #BDCECF;
+
+    /****Página Sobre***/
     /*cabecalho*/
     --sobre__header__cabecalho--backgroundColor: #A8DADC;
     --sobre__header__cabecalho__title--fontcolor:#1D3557;
@@ -14,11 +46,27 @@
     --sobre__main__sobre--backgroundColor:#F1FAEE;
     --sobre__main__sobre__title--fontColor:#1D3557;
 
-    --sobre__header__title--fontColor:#1D3557;
-    --sobre__header_button--fontColor: #1D3557;
-    --sobre__main__title--fontColor:#1D3557;
-    --sobre__main__section__title--fontColor: #457B9D;
-    --sobre__main__section__text--fontColor: #F1FAEE;    
+    /*Nossa História*/
+    --sobre__main__historia--backgroundColor:#1D3557;
+    --sobre__main__historia__title--fontColor:#457B9D;
+    --sobre__main__historia__text--fontColor: #FFFFFF;
+
+    /*Avaliações*/
+    --sobre__main__avaliacao--backgroundColor: #F1FAEE;
+    --sobre__main__avaliacao__title--fontColor: #1D3557;
+    --sobre__main__avaliacao__comentario--backgroundColor:#457B9D;
+    --sobre__main__avaliacao__comentario--fontColor: #FFFFFF;
+    --sobre__main__avaliacao__comentario__userName--fontColor:#1D3557;
+
+    /*Menu*/
+    --sobre__main__menu--backgroundColor:#1D3557;
+    --sobre__main__menu__descricao__title--fontColor: #457B9D;
+
+    /*Nossas Unidades*/
+    --sobre__main__nossasUnidades--background:#F1FAEE;
+    --sobre__main__nossasUnidades__descricao__title--SmartphoneFontColor:#457B9D;
+    --sobre__main__nossasUnidades__descricao__title--DesktopFontColor:#1D3557;
+    --sobre__main__nossasUnidades__descricao_text--fontColor:#1D3557;
 }
 
 body{
@@ -36,13 +84,53 @@ ul{
 a{
     text-decoration: none;
 }
+
+/*Códigos repetentes*/
 .container{
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
 .title__secundario{
     font-weight: 400;
     font-size: 64px;
+}
+
+.custom__linkButton{
+    background-color: var(--custom__linkButton--colorbackground);
+    border: 2px solid var(--custom__linkButton--colorborder);
+    box-sizing: border-box; /*Não deixa o paddin aumentar a altura/largura máxima*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--custom__linkButton--fontcolor);
+    height:  3.5rem;
+    padding: 1rem 2rem;
+    transition: 1s;
+    text-align: center;
+    width: 13rem;
+}
+
+.custom__linkButton:hover{
+    border: 2px solid var(--custom__linkButoon--clicado--coloborder);
+    color: var(--custom__linkButoon--clicado--coloborder);
+    transform: scale(1.5);
+}
+
+.text_descricao{
+    width: 80%;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.formulario-buscar{
+    border-style: none;
+    border-color:var(--formulario__buscar--corBorder);
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    transition: 1s;
+ }
+ ::placeholder{
+    color: var(--formulario__buscar--placeHoderFontColor);
+}
+.formulario-buscar:hover{
+    transform: scale(1.5);
 }

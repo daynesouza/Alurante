@@ -1,73 +1,88 @@
-.rodape{
-    background-color: #1D3557;
-}
-.rodape-menu{
+/*Rodape*/
+/*Bloco principal*/
+.container--rodape{
+    background-color: var(--rodape--backgroundColor);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
+    height: 100vh;
+    justify-content: space-evenly;
 }
-.rodape-menu-item{
- padding: 1rem 1rem;   
-}
-.rodape-menu-item a{
-    text-decoration: underline #E63946;
-    color: #F1FAEE;
-}
-.rodape-contato{
-     text-align: center;
-     margin: 5rem 1rem;
-}
-.rodape-contato-img{
-    margin: 2rem 0.5rem;
-}
-.rodape-endereco{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 5rem 1rem;
-}
-.rodape-endereco-texto{
-    padding: 2rem 2rem;
-}
-.rodape-buscar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3rem;
-}
-.formulario-buscar_rodape{
-padding: 0.15rem 1rem;
-margin: 1rem 0.5rem;
+.rodape__title{
+    font-size: 34px;
 }
 
-/*Desktop*/
-@media screen and (min-width: 1024px){
-    /*Rodapé*/
-    .rodape{
-        display: flex;
-        align-items: baseline;
-        justify-content: space-around;
+/*Bloco Menu*/
+.rodape__menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.rodape__menu__itens{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.rodape__menu__item{
+    color: var(--rodape--fontColor);
+    display: inline-block;
+    text-decoration: underline #E63946;
+    transition: 1s;
+}
+.rodape__menu__item:hover{
+    transform: scale(1.5);
+}
+
+/*Bloco contato*/
+.rodape__contato{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+.rodape__contato__icones{
+    display: flex;
+    column-gap: 2rem;    
+}
+.rodape__contato__ico{
+    display: inline-block;
+    transition: 1s;
+}
+.rodape__contato__ico:hover{
+    transform: scale(1.5);
+}
+
+/*Bloco endereço*/
+.rodape__endereco{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+}
+.rodape__endereco__text{
+    font-size: 20px;
+    line-height: 2rem;
+}
+.rodape__buscar{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+@media screen and (min-width:1024px){
+    .container--rodape{
+        flex-direction: row;
+        height: auto;
+        padding: 3rem 0rem;
     }
-    .rodape-menu{
+    .rodape__endereco{
         align-items: flex-start;
-    }
-    .rodape-menu-item{
-        padding: 0.5rem 0rem;
-    }
-    .rodape-endereco{
+        row-gap: 1rem;
         text-align: left;
     }
-    .rodape-endereco-texto{
-        padding: 0;
-    }
-    .titulo-secundario_rodape{
-        padding: 1rem 0rem;
-    }
-    .rodape-buscar{
+    .rodape__buscar{
         align-items: flex-start;
-    }
-    .formulario-buscar_rodape{
-        margin: 0;
     }
 }
