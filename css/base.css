@@ -36,6 +36,11 @@
     --main__cardapio__pesquisa__form__botao--background:#1D3557;
     --main__cardapio__pesquisa__form__botao--fontColor: #BDCECF;
 
+    /*Cardápio Blog*/
+    --main__cardapio__pesquisa--backgroundcolor:#F1FAEE; 
+    --main__cardapio__blog__title:#1D3557;
+
+
     /****Página Sobre***/
     /*cabecalho*/
     --sobre__header__cabecalho--backgroundColor: #A8DADC;
