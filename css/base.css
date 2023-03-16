@@ -5,7 +5,7 @@
     --body-font: 'Sansita', sans-serif;
     --font-Zeyada: 'Zeyada';
     --font-Montserrat: 'Montserrat';
-    --body-fontColor: #F1FAEE;
+    --body-fontColor: #F1FAEE;    
 
     /*Botão (tag A) "Saber Mais"*/
     --custom__linkButton--colorbackground:#FFFFFF;
@@ -16,6 +16,11 @@
     /*Formulário texto buscar*/
     --formulario__buscar--corBorder:#F1FAEE;
     --formulario__buscar--placeHoderFontColor:#BDCECF;
+
+    /*Cadastro Button*/
+    --button__cadastro--borderColor: #457B9D;
+    --button__cadastro--backgroundColor: #FFFFFF;
+    --button__cadastro--fontColor: #457B9D;
 
     /*Rodapé*/
     --rodape--backgroundColor: #1D3557;
@@ -72,6 +77,29 @@
     --sobre__main__nossasUnidades__descricao__title--SmartphoneFontColor:#457B9D;
     --sobre__main__nossasUnidades__descricao__title--DesktopFontColor:#1D3557;
     --sobre__main__nossasUnidades__descricao_text--fontColor:#1D3557;
+
+    /****Página Cadastro****/
+    /*Global*/
+    --cadastro__main__cadastro__title--fontcolor:#1D3557;
+    --cadastro__main__cadastro__text--fontcolor:#1D3557;
+
+    /*cabecalho*/
+    --cadastro__header__cabecalho--backgroundColor: #A8DADC;
+    --cadastro__header__cabecalho__title--fontcolor:#1D3557;
+    --cadastro__header__cabecalho__menu--fontcolor: #1D3557;
+
+    /*Cadastro título*/
+    --cadastro__main__cadastro--background:#F1FAEE;
+    
+    /*Complete seu cadastro*/
+    --cadastro__main__cadastro__form--background:#A8DADC;
+
+    /*Cadastro erro*/
+    --cadastro__main__cadastro__error--fontColor:#E63946;
+    --cadastro__main__cadastro__error__input--borderColor:#E63946;
+
+    /****Página Cadastro--concluído****/
+    --cadastro--concluido__main__message--background:#A8DADC;
 }
 
 body{
@@ -138,4 +166,18 @@ a{
 }
 .formulario-buscar:hover{
     transform: scale(1.5);
+}
+
+.button{
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 20px;
+    font-family: var(--font-Montserrat);
+}
+
+.button__cadastro{
+    border-color: var(--button__cadastro--borderColor);
+    color: var(--button__cadastro--fontColor);
+    background-color: var(--button__cadastro--backgroundColor);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }

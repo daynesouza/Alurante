@@ -1,0 +1,23 @@
+/*Main mensagem de cadastro concluído*/
+.main__cadastro--concluido{
+    background-color: var(--cadastro__main__cadastro--background);
+}
+.main__cadastro__message{
+    align-items: center;
+    background-color: var(--cadastro--concluido__main__message--background);
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+    text-align: center;
+}
+@media screen and (min-width:1024px) {
+    .main__cadastro--concluido{
+        height: 150vh;
+    }
+    .main__cadastro__message{
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

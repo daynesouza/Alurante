@@ -1,0 +1,95 @@
+/*Header cabeçalho*/
+.container__header--cadastro{
+    background-color: var(--cadastro__header__cabecalho--backgroundColor);    
+}
+.container__header__title--cadastro{
+    color: var(--cadastro__header__cabecalho__title--fontcolor);
+}
+.container__header__menu__item--cadastro{
+    color: var(--cadastro__header__cabecalho__menu--fontcolor);
+}
+
+/*Main Formulário*/
+.main__cadastro__section{
+    align-items: center;
+    background-color: var(--cadastro__main__cadastro--background);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+}
+.main__cadastro__section__title{
+    color:var(--cadastro__main__cadastro__title--fontcolor);
+    font-family: var(--font-Zeyada);
+    font-size: 64px;
+}
+.main__cadastro__form{
+    align-items: center;
+    background-color: var(--cadastro__main__cadastro__form--background);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0rem 2rem 0rem;
+    row-gap: 1rem;
+    width: 100%;
+}
+.main__cadastro__form__container{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 0.4rem;
+    width: 95%;
+}
+.main__cadastro__form_title{
+    color: var(--cadastro__main__cadastro__title--fontcolor);
+    font-family: var(--font-Montserrat);
+    font-size: 36px;
+}
+.main__cadastro__form__legend, .main__cadastro__form__label{
+    color: var(--cadastro__main__cadastro__text--fontcolor);
+    font-family: var(--font-Montserrat);
+    font-size: 24px;
+}
+.main__cadastro__form__legend{
+    padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
+.main__cadastro__form__input{
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+.main__cadastro__form__button{
+    margin: 5rem 0rem 2rem 0rem;
+}
+
+/*Mensagem de erro Cadastro*/
+.inputMensagemErro{
+    color: var(--cadastro__main__cadastro__error--fontColor);
+}
+.main__cadastro__form__input--erro{
+    border: 2px solid var(--cadastro__main__cadastro__error__input--borderColor);
+}
+
+/*Desktop*/
+@media screen and (min-width:1024px) {
+    .main__cadastro{
+        align-items: center;
+        background-color: var(--cadastro__main__cadastro--background);
+        display: flex;
+        flex-direction: column;    
+    }
+    .main__cadastro__section{
+        width: 100%;
+    }
+    .main__cadastro__form{
+        width: 70%;
+        margin-bottom: 20vh;
+    }
+}

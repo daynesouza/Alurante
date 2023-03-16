@@ -93,3 +93,82 @@
 .main__cardapio__blog__img{
     width: 90%;
 }
+/*Desktop*/
+@media screen and (min-width: 1024px){
+    /*main*/
+    .main__cardapio{
+        align-items: center;
+        padding-top: 2rem;
+    }
+    /*Pesquisa*/
+    .main__cardapio__pesquisa{
+        align-items: flex-start;
+        width: 80%;
+        height: 30vh;
+    }
+    .main__cardapio__pesquisa__form{
+        align-items: flex-start;
+        height: 40%;
+    }
+    .main__cardapio__pesquisa__form__lista{
+        flex-direction: row;
+    }
+    .main__cardapio__pesquisa__form__lista{
+        column-gap: 2rem;
+        row-gap: 0rem;
+        width: auto;
+        height: 40%;
+    }
+
+    /*Cardápio Refeições*/
+    .main__cardapio__refeicoes{
+        column-gap: 5%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;        
+        padding-bottom: 5rem;
+        width: 80%;
+    }
+    .main__cardapio__refeicao{
+        width: 30%;
+        transition: 1s;
+    }
+    .main__cardapio__refeicao:hover{
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+
+    /*Cardápio Blog*/
+    .main__cardapio__blog{        
+        display: grid;
+        grid-template:
+        "titulo titulo titulo titulo"
+        "destaque destaque destaque imagem1"
+        "destaque destaque destaque imagem2";
+        grid-column-gap: 1rem;
+        justify-items: stretch;
+        padding: 2% 10%;
+    }
+    .titulo-secundario_blog{
+        grid-area: titulo;
+    }
+    .main__cardapio__blog__img{
+        height: 100%;
+        width: 100%;
+        transition: 1s;
+    }
+    .main__cardapio__blog__img:hover{
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+    .main__cardapio__blog__img__destaque{
+        grid-area: destaque;   
+    }
+    .main__cardapio__blog__img__imagem1{
+        grid-area: imagem1;
+    }
+    .main__cardapio__blog__img__imagem2{
+        grid-area: imagem2;
+    }
+}

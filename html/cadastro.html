@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alurante</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="../css/rodape/rodape.css">
+    <link rel="stylesheet" href="../css/cadastro/cadastro.css">
+</head>
+<body>
+    <header class="container container__header container__header--cadastro">
+        <h1 class="container__header__title container__header__title--cadastro">Alurante</h1>
+        <nav class="container__header__menu">
+            <ul class="container__header__menu__itens container__header__menu--cadastro">
+                <li><a href="../main.html" class="container__header__menu__item container__header__menu__item--cadastro">home</a></li>
+                <li><a href="./sobre.html" class="container__header__menu__item container__header__menu__item--cadastro">sobre</a></li>
+                <li><a href="./cadastro.html" class="container__header__menu__item container__header__menu__item--cadastro">cadastro</a></li>
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--cadastro">delivery</a></li>
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--cadastro">reserva</a></li>
+                <li><a href="#" class="container__header__menu__item container__header__menu__item--cadastro">contato</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main__cadastro">
+        <section class="main__cadastro__section">
+            <h2 class="title__secundario main__cadastro__section__title">Cadastro</h2>
+        </section>
+        <form class="main__cadastro__form" action="./cadastro--concluido.html">
+            <h2 class="title__secundario main__cadastro__form_title">Complete seu cadastro</h2>
+            <fieldset class="main__cadastro__form__container main__cadastro__form__container--infoBasicas">
+                <legend class="main__cadastro__form__legend">Informações Básicas</legend>
+                
+                <label class="main__cadastro__form__label" for="main__cadastro__form__nome">Nome</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__nome" type="text" placeholder="Nome" data-type="nome" required/>
+                <span class="inputMensagemErro" data-mensagemErro="nome"></span>
+                
+                <label class="main__cadastro__form__label" for="main__cadastro__form__email">Email</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__email" type="email" placeholder="Email" data-type="email" required/>
+                <span class="inputMensagemErro" data-mensagemErro="email"></span>
+
+                 <label class="main__cadastro__form__label" for="main__cadastro__form__senha">Senha</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__senha" type="password" placeholder="Senha" data-type="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" required/>
+                <span class="inputMensagemErro" data-mensagemErro="senha"></span>
+            </fieldset>
+
+            <fieldset class="main__cadastro__form__container main__cadastro__form__container--infoPessoais">
+                <legend class="main__cadastro__form__legend">Informações pessoais</legend>
+
+                <label class="main__cadastro__form__label" for="main__cadastro__form__dataNascimento">Data de Nascimento</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__dataNascimento" type="date" data-type="dataNascimento" required/>
+                <span class="inputMensagemErro" data-mensagemErro="dataNascimento"></span>
+
+                <label class="main__cadastro__form__label" for="main__cadastro__form__cpf">CPF</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__cpf" type="text" placeholder="CPF" minlenght="11" maxlength="14" data-type="cpf" required/>
+                <span class="inputMensagemErro" data-mensagemErro="cpf"></span>
+            </fieldset>
+
+            <fieldset class="main__cadastro__form__container main__cadastro__form__container--endereco">
+                <legend class="main__cadastro__form__legend">Endereço</legend>
+
+                <label class="main__cadastro__form__label" for="main__cadastro__form__cep">CEP</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__cep" type="text" placeholder="CEP" data-type="cep" pattern="[\d]{5}-?[\d]{3}" minlenght="8" maxlength="9" required/>
+                <span class="inputMensagemErro" data-mensagemErro="cep"></span>
+
+                <label class="main__cadastro__form__label" for="main__cadastro__form__logradouro">Logradouro</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__logradouro" type="text" placeholder="Logradouro" data-type="logradouro" required/>
+                <span class="inputMensagemErro" data-mensagemErro="logradouro"></span>
+
+                <label class="main__cadastro__form__label" for="main__cadastro__form__cidade">Cidade</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__cidade" type="text" placeholder="Cidade" data-type="cidade" required/>
+                <span class="inputMensagemErro" data-mensagemErro="cidade"></span>
+            
+                <label class="main__cadastro__form__label" for="main__cadastro__form__estado">Estado</label>
+                <input class="main__cadastro__form__input" id="main__cadastro__form__estado" type="text" placeholder="Estado" data-type="estado" required/>
+                <span class="inputMensagemErro" data-mensagemErro="estado"></span>
+            </fieldset>
+            <button class="button button__cadastro main__cadastro__form__button">Cadastrar</a>
+        </form>
+    </main>
+
+    <footer class="container container--rodape">
+        <section class="rodape__menu">
+            <h2 class="title__secundario rodape__title">MENU</h2>
+            <ul class="rodape__menu__itens">
+                <li><a class="rodape__menu__item" href="../main.html">home</a></li>
+                <li><a class="rodape__menu__item" href="./sobre.html">sobre</a></li>
+                <li><a class="rodape__menu__item" href="./cadastro.html">cadastro</a></li>
+                <li><a class="rodape__menu__item" href="#">delivery</a></li>
+                <li><a class="rodape__menu__item" href="#">reserva</a></li>
+                <li><a class="rodape__menu__item" href="#">contato</a></li>
+            </ul>            
+        </section>
+        <section class="rodape__contato">   
+            <h2 class="title__secundario rodape__title">CONTATO</h2>
+            <div class="rodape__contato__icones">
+                <img src="../assets/src/img/rodape/mail.svg" class="rodape__contato__ico" alt="Icone de e-mail">
+                <img src="../assets/src/img/rodape/phone.svg" class="rodape__contato__ico" alt="Icone de um celular">
+                <img src="../assets/src/img/rodape/instagram.svg" class="rodape__contato__ico" alt="Icone do Instagram">
+                <img src="../assets/src/img/rodape/twitter.svg" class="rodape__contato__ico" alt="Icone do Twitter">
+            </div> 
+        </section>
+        <address class="rodape__endereco">
+            <h2 class="rodape__title">ENDEREÇO</h2>
+
+            <p class="rodape__endereco__text">
+                Rua Vergueiro, 3185 </br>
+                Vila Mariana, São Paulo - SP</br>
+                Cep: 04101-300
+            </p>       
+        </address>
+        <section class="rodape__buscar">  
+            <h2 class="title__secundario rodape__title">BUSCAR</h2>
+            <form><input type="text" class="formulario-buscar rodape__buscar__form" placeholder="buscar..."></form>
+        </section>
+    </footer>
+    <script src="../js/app.js" type="module"></script>
+</body>
+</html>
